@@ -1,0 +1,30 @@
+.contenedorDetalle{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* Agregado de estilos para el poster */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #444;
+    /* backdrop-filter: blur(10px) opacity(0.5) grayscale(0.5); */
+    /* mix-blend-mode: inherit; */    
+    background-blend-mode: soft-light;
+    /* background-image: radial-gradient(circle, gray 10%, black 50%); */   
+}
+
+.col{
+    max-width: 400px;
+    margin: 15px;
+    height: auto;
+    width: 80%;
+    border-radius: 15px;
+}
+
+.peliculaDetalle{
+    font-size: 1.5rem;
+}
+
+.item{
+    margin-top: 0;
+}

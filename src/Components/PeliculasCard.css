@@ -1,0 +1,70 @@
+.moviesCard {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.movieImage {
+    border-radius: 10px;
+    background-color: azure;
+    width: 230px;
+    height: 345px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.movieImage:hover{
+    box-shadow: 0 0 11px gray;
+    /* 0 Agregado efecto zoom on hover de las pelis */
+    width: 250px;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 1 Agregado de estilos para el cartel */
+.overview {
+  font-size: .9rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #151525;
+  color: azure;
+  padding: .5rem;
+  z-index: 1; 
+  width: 13rem;
+  height: 18rem;
+  overflow: hidden;
+  position: fixed;
+  opacity: 0.7;
+  border-radius: 5%;
+  border: solid darkgray;
+  visibility: hidden;
+  top: 30%;
+  transform: translateY(10%); 
+  transition: visibility 1s linear, transform .5s ease;
+}
+
+/* 2 Estilos para el cartel on hover */
+.moviesCard:hover .overview {
+    visibility: visible;
+    transform: translateX(10%);
+}
+
+/* 3 Estilos para el título "overview" */
+h3 {
+    margin: 0;
+}
+
+/* 4 Estilos para puntuac e idioma */
+.subtitulos {
+    display: flex;
+    font-size: .8rem;
+    margin: 0 auto;
+}
+
+@media(max-width:560px) {
+    .movieImage {
+        width: 90%;
+        height: auto;
+    }
+}
