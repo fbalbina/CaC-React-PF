@@ -11,3 +11,4 @@
 10. Estilos en "PeliculasCard.css".
 11. Agregado de poster como imagen de fondo en "PeliculaDetalle.jsx".
 12. Agregado de estilos en "PeliculaDetalle.css" p/poster.
+13. Agregado httpCliente.js a .gitignore.
